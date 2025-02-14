@@ -11,6 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        colorDarkHeading: "var(--color-dark-heading)",
+      },
+      fontFamily: {
+        anybody: ["var(--fontFamily-anybody)"],
+        armio: "var(--armio)",
+      },
+      backgroundImage: {
+        bgRedV1: "var(--color-red-v1)",
+        bgRedV2: "var(--color-red-v2)",
       },
     },
   },
