@@ -28,12 +28,13 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <div className="mx-3 lg:mx-0 mt-2 lg:mt-0 w-full  fixed bg-white">
+    <div className="p-3 lg:p-0  lg:mt-0 w-full z-50  fixed bg-white">
       <nav className="max-w-[106.19rem] mx-auto flex justify-between items-center ">
-        <div className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image src={logo} alt="logo" />
           <Image src={logoName} alt="logo name" />
-        </div>
+        </Link>
+
         <ul
           className={`${anybody.variable} hidden lg:flex text-[0.953rem] my-[1.422rem] gap-[3.563rem] font-anybody items-center text-colorDarkHeading`}
         >

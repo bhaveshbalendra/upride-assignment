@@ -16,8 +16,13 @@ const photoArray = [
 
 const PhotoGallary = () => {
   return (
-    <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[108.19rem]">
-      <div className="flex flex-wrap justify-center w-full gap-[1.091rem] items-center">
+    <div
+      style={{
+        background: "linear-gradient(to top, #F2EAEA 30%, #F3ECE3 70%)",
+      }}
+      className=" pt-[1rem] md:pt-[4.879rem]   w-full mx-auto"
+    >
+      <div className="flex flex-wrap justify-center mx-auto max-w-[108.19rem] gap-[1.091rem] items-center px-2 md:px-0">
         {photoArray.map((e, i) => (
           <ImageFrame
             key={i}

@@ -1,4 +1,3 @@
-import Footer from "@/components/layout/footer/footer";
 import Header from "@/components/layout/header/header";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -29,10 +28,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div>
+        <div className="w-full">
           <Header />
           {children}
-          <Footer />
         </div>
       </body>
     </html>
