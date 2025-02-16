@@ -11,7 +11,7 @@ import minus from "./minus.svg";
 import plusV2 from "./plus-v2.svg";
 import plus from "./plus.svg";
 import profilePicture from "./profile-picture.svg";
-import profile from "./profile.svg";
+import profile from "./Profile.svg";
 import search from "./search.svg";
 import testDrive from "./test-drive.svg";
 import trafficLight from "./traffic-light.svg";
