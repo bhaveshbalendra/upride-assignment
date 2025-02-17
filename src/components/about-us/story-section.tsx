@@ -36,8 +36,8 @@ const timelineArray = [
 const StorySection = () => {
   return (
     <div className="min-h-[54.541rem] bg-[#F2EAEA] relative px-4 ">
-      <div className="flex max-w-[107.402rem] mx-auto gap-[2rem] md:gap-[9rem] md:flex-row flex-col ">
-        <div className="flex flex-col pt-[2.721rem] md:pt-[5.721rem]">
+      <div className="flex max-w-[107.402rem] mx-auto gap-[1rem] md:pt-[5.721rem] md:gap-[9rem] md:flex-row flex-col ">
+        <div className="flex flex-col pt-[2.721rem] ">
           <h3
             className={`${anybody.variable}  font-anybody font-bold text-[1.75rem]  bg-bgRedV1 text-transparent bg-clip-text leading-[128.571%] uppercase `}
           >
@@ -50,7 +50,7 @@ const StorySection = () => {
           </h2>
         </div>
         <p
-          className={`${arimo.variable} font-armio pt-[1rem] md:pt-[5.721rem] text-[1rem] md:text-[1.375rem] font-normal leading-[157%] p-[0.625rem] max-w-[64.715rem]`}
+          className={`${arimo.variable} font-armio pt-[0rem] md:pt-[5.721rem] text-[1rem] md:text-[1.375rem] font-normal leading-[157%] p-[0.625rem] max-w-[64.715rem]`}
         >
           At Upride, we realized driving education in India was stuck in
           reverse. From unprofessional instructors to outdated methods and a
@@ -60,7 +60,7 @@ const StorySection = () => {
           to drive smarter, safer, and accessible to all.
         </p>
       </div>
-      <div className=" max-w-[107.402rem] mx-auto flex justify-center lg:justify-normal gap-[9.605rem] pt-[6.671rem] flex-wrap">
+      <div className=" max-w-[107.402rem] mx-auto flex justify-center lg:justify-normal gap-[3rem] md:gap-[9.605rem] pt-[1.671rem] md:pt-[6.671rem] flex-wrap">
         {timelineArray.map((e, i) => (
           <Milestone
             key={i}

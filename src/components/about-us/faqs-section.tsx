@@ -72,9 +72,9 @@ const Accordion = ({ query, answer }: { query: string; answer: string }) => {
 };
 const FaqsSection = () => {
   return (
-    <div className="max-w-[106.188rem] mx-auto bg-[#F2ECEC] rounded-[2.254rem] pb-[4.813rem] pt-[3.438rem]">
+    <div className="max-w-[106.188rem] mx-auto bg-[#F2ECEC] px-4 md:px-0 rounded-[2.254rem] pb-[4.813rem] pt-[3.438rem]">
       <h2
-        className={`${anybody.variable} font-anybody text-[2.75rem] mb-[3.75rem] text-center text-black font-bold leading-[3.5rem]`}
+        className={`${anybody.variable} font-anybody text-[2rem] md:text-[2.75rem] mb-[3.75rem] text-center text-black font-bold leading-[3.5rem]`}
       >
         Frequently Asked Questions?
       </h2>

@@ -17,9 +17,9 @@ const HeroSection = () => {
     <section
       className={`bg-[#F3ECE3] flex flex-col max-h-[28.713rem] pt-[4.375rem]`}
     >
-      <h3 className="text-center pt-[3rem] md:pt-[4.863rem] pb-[1rem] md:pb-0 relative z-20 ">
+      <h3 className="text-center pt-[2rem] md:pt-[4.863rem] pb-[1rem] md:pb-0 relative z-20 ">
         <span
-          className={`${anybody.variable} bg-bgRedV1 text-transparent bg-clip-text z-20 text-[1.2rem] sm:text-[1.8rem]   lg:text-[1.75rem] font-bold  leading-[128.571%] uppercase font-anybody`}
+          className={`${anybody.variable} bg-bgRedV1 text-transparent bg-clip-text z-20 text-[2.2rem] sm:text-[1.8rem]   lg:text-[1.75rem] font-bold  leading-[128.571%] uppercase font-anybody`}
         >
           About Us
         </span>
@@ -35,7 +35,7 @@ const HeroSection = () => {
         />
       </h3>
       <h1
-        className={`${anybody.variable} text-center max-w-[58.03rem] z-20  bg-black text-transparent bg-clip-text text-[2rem] sm:text-[2.5rem] lg:text-[3.313rem] font-bold  leading-[139%] mx-auto font-anybody`}
+        className={`${anybody.variable} text-center max-w-[58.03rem] z-20  bg-black text-transparent bg-clip-text text-[1.5rem] md:text-[2rem] lg:text-[3.313rem] font-bold  leading-[139%] mx-auto font-anybody`}
       >
         Transforming Driving Education Across India
       </h1>

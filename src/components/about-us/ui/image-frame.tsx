@@ -1,25 +1,31 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 const ImageFrame = ({
-  height = 100,
-  width = 100,
-  borderRadius = "0",
+  height,
+  width,
+  borderRadius = 0,
   objectCover = "contain",
   alt,
   src,
   layout = "intrinsic",
-}: any) => {
+}: {
+  height: number;
+  width: number;
+  borderRadius: number;
+  objectCover: string;
+  alt: string;
+  src: StaticImageData;
+  layout: string;
+}) => {
   return (
     <div
+      className="relative"
       style={{
-        height: `${height}rem`,
-        width: `${width}rem`,
+        aspectRatio: `${width}/${height}`,
         borderRadius: `${borderRadius}rem`,
         overflow: "hidden",
       }}
-      className="flex justify-center items-center"
     >
       <Image
         src={src}

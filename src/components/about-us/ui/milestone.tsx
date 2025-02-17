@@ -22,7 +22,7 @@ const Milestone = ({
   content: string;
 }) => {
   return (
-    <div className="flex flex-col max-w-[24rem] ">
+    <div className="flex flex-col max-w-[24rem] items-center md:items-baseline">
       <div className="w-[8.603rem] h-[8.603rem] rounded-full relative bg-[#EBD5D5] flex justify-center items-center">
         <Image src={trafficLight} alt="traffic light" />
         <div className="hidden md:block absolute left-[110%] w-52 2xl:w-80  border-t-2 border-dashed border-black" />

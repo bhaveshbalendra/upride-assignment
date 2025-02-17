@@ -45,9 +45,9 @@ const ContentBox = ({
 
 const MissionVisionSection = () => {
   return (
-    <div className="bg-[#F4F4F4] w-full pt-[5.327rem] pb-[5.65rem]">
-      <div className="mx-auto max-w-[106.19rem]">
-        <div className="flex gap-[6.718rem] mb-[4.063rem] items-center">
+    <div className="bg-[#F4F4F4] w-full pt-[2rem] xl:pt-[5.327rem] pb-[5.65rem]">
+      <div className="mx-auto max-w-[106.19rem] px-4 xl:px-0">
+        <div className="flex gap-[3rem] md:gap-[6.718rem] mb-[4.063rem] items-center justify-center xl:justify-normal flex-wrap-reverse xl:flex-nowrap">
           <Image src={testDrive} alt=" test drive" className="" />
           <ContentBox
             h4={"Mission"}
@@ -58,7 +58,7 @@ const MissionVisionSection = () => {
             css={{ w: "38.056rem" }}
           />
         </div>
-        <div className="flex gap-[9.668rem] items-center">
+        <div className="flex gap-[3rem] md:gap-[9.668rem] items-center flex-wrap xl:flex-nowrap  justify-center xl:justify-normal ">
           <ContentBox
             h4={"Vision"}
             h5={"Driving Education, Reinvented for India"}

@@ -21,7 +21,7 @@ const arimo = Arimo({
 });
 const OurGallary = () => {
   return (
-    <div className="bg-[#F2EAEA] mx-auto max-w-[106.188rem] rounded-[3.188rem] mt-[11.583rem]">
+    <div className="bg-[#F2EAEA] mx-auto max-w-[106.188rem] rounded-[3.188rem] mt-[4rem] lg:mt-[11.583rem] px-4 2xl:p-0">
       <div className="mx-auto text-center">
         <h3
           className={`${arimo.variable} pt-[5.25rem] font-bold font-arimo text-[1.563rem]  leading-[2.188rem]`}
@@ -31,7 +31,7 @@ const OurGallary = () => {
           </span>
         </h3>
         <h2
-          className={`${anybody.variable} font-anybody text-[2.75rem] text-colorDarkHeading font-bold leading-[3.5rem]`}
+          className={`${anybody.variable} font-anybody text-[2rem] md:text-[2.75rem] text-colorDarkHeading font-bold  md:leading-[3.5rem]`}
         >
           Moments That Drive Us Forward
         </h2>
@@ -52,14 +52,16 @@ const OurGallary = () => {
           Visit Our Instagram
         </button>
       </div>
-      <div className="flex gap-[1.125rem] justify-center pb-[3.313rem]">
-        <div className="flex flex-col gap-[1.125rem]">
-          <Image src={one} alt="one" />
-          <Image src={two} alt="two" />
-        </div>
-        <div className="flex flex-col gap-[1.125rem]">
-          <Image src={three} alt="three" />
-          <Image src={four} alt="four" />
+      <div className="flex gap-[1.125rem] justify-center flex-wrap lg:flex-nowrap pb-[3.313rem]">
+        <div className="flex gap-[1.125rem]">
+          <div className="flex flex-col gap-[1.125rem]">
+            <Image src={one} alt="one" />
+            <Image src={two} alt="two" />
+          </div>
+          <div className="flex flex-col gap-[1.125rem]">
+            <Image src={three} alt="three" />
+            <Image src={four} alt="four" />
+          </div>
         </div>
         <div className="flex flex-col gap-[1.125rem]">
           <div className="flex gap-[1.125rem]">

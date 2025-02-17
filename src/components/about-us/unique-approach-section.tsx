@@ -46,16 +46,16 @@ const Card = ({
   content: string;
 }) => {
   return (
-    <div className="min-w-[32.281rem] min-h-[25.004rem] bg-[#F0E1E1] rounded-[1.438rem]">
-      <div className="pt-[2.649rem] pl-[3.101rem]">
+    <div className=" 2xl:min-w-[32.281rem] 2xl:min-h-[25.004rem]  h-auto bg-[#F0E1E1] rounded-[1.438rem]">
+      <div className="p-4 md:p-6 2xl:pb-0 2xl:pr-0 2xl:pt-[2.649rem] 2xl:pl-[3.101rem]">
         <Image src={icon} alt={heading} />
         <h5
-          className={`${arimo.variable} pt-[2.636rem] font-bold font-arimo text-[1.563rem] text-colorDarkHeading leading-[2.188rem]`}
+          className={`${arimo.variable} pt-[1rem] md:pt-[2.636rem] font-bold font-arimo text-[1.563rem] text-colorDarkHeading leading-[2.188rem]`}
         >
           {heading}
         </h5>
         <p
-          className={`${arimo.variable}  w-[24.911rem] font-arimo text-[1.375rem] text-colorDarkHeading leading-[2.159rem]`}
+          className={`${arimo.variable}  max-w-[24.911rem] font-arimo text-[1rem] md:text-[1.375rem] text-colorDarkHeading leading-[2.159rem]`}
         >
           {content}
         </p>
@@ -66,8 +66,8 @@ const Card = ({
 
 const UniqueApproachSection = () => {
   return (
-    <div className="mx-auto max-w-[107.188rem]  min-h-[49.093rem] bg-[#F2EAEA] rounded-[3.188rem]">
-      <div className="mx-auto text-center pt-[5.325rem]">
+    <div className="mx-auto max-w-[107.188rem]  min-h-[49.093rem] bg-[#F2EAEA] rounded-[3.188rem] pb-10 md:pb-0 px-4 2xl:p-0">
+      <div className="mx-auto text-center pt-[2rem] md:pt-[5.325rem]">
         <h3
           className={`${anybody.variable} font-anybody text-[1.75rem] font-bold leading-[2.375rem]`}
         >
@@ -76,7 +76,7 @@ const UniqueApproachSection = () => {
           </span>
         </h3>
         <h2
-          className={`${anybody.variable} font-anybody text-[2.75rem] text-colorDarkHeading font-bold leading-[3.5rem]`}
+          className={`${anybody.variable} font-anybody text-[1.5rem] md:text-[2.75rem] text-colorDarkHeading font-bold md:leading-[3.5rem]`}
         >
           Driving Smarter, Learning Better
         </h2>
@@ -87,7 +87,7 @@ const UniqueApproachSection = () => {
           make your learning journey exceptional
         </p>
       </div>
-      <div className="flex px-[4.132rem] gap-[1.063rem] pt-[3.617rem]">
+      <div className="flex px-2 lg:max-px-[4.132rem]  gap-[1.063rem] pt-[3.617rem] flex-wrap 2xl:flex-nowrap justify-center ">
         {cardValuesArray.map((e, i) => (
           <Card icon={e.src} heading={e.heading} content={e.content} key={i} />
         ))}

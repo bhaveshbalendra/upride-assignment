@@ -7,33 +7,41 @@ import {
 import React from "react";
 import ImageFrame from "./image-frame";
 
-const photoArray = [
-  { alt: "car drive", src: carDrive, width: 26.057, height: 28.128 },
-  { alt: "car pose", src: carPose, width: 26.057, height: 18.711 },
-  { alt: "bike pose", src: bikePose, width: 26.057, height: 28.128 },
-  { alt: "licence check", src: licenceCheck, width: 26.057, height: 18.711 },
-];
-
 const PhotoGallary = () => {
+  const photoArray = [
+    { alt: "car drive", src: carDrive, width: 26.057, height: 28.128 },
+    { alt: "car pose", src: carPose, width: 26.057, height: 18.711 },
+    { alt: "bike pose", src: bikePose, width: 26.057, height: 28.128 },
+    { alt: "licence check", src: licenceCheck, width: 26.057, height: 18.711 },
+  ];
+
   return (
     <div
       style={{
         background: "linear-gradient(to top, #F2EAEA 30%, #F3ECE3 70%)",
       }}
-      className=" pt-[1rem] md:pt-[4.879rem]   w-full mx-auto"
+      className="pt-4 md:pt-[4.879rem] w-full mx-auto "
     >
-      <div className="flex flex-wrap justify-center mx-auto max-w-[108.19rem] gap-[1.091rem] items-center px-2 md:px-0">
-        {photoArray.map((e, i) => (
-          <ImageFrame
+      <div className="grid grid-cols-1 sm:grid-cols-2  justify-items-center lg:justify-items-start lg:grid-cols-4 gap-4 max-w-[108.19rem] mx-auto px-4 md:px-8">
+        {photoArray.map((photo, i) => (
+          <div
             key={i}
-            alt={e.alt}
-            src={e.src}
-            borderRadius={2.063}
-            objectCover={"cover"}
-            layout="fixed"
-            height={e.height}
-            width={e.width}
-          />
+            className="w-full"
+            style={{
+              maxWidth: `${photo.width}rem`,
+              marginBlock: "auto",
+            }}
+          >
+            <ImageFrame
+              alt={photo.alt}
+              src={photo.src}
+              borderRadius={2.063}
+              objectCover="cover"
+              layout="fixed"
+              height={photo.height}
+              width={photo.width}
+            />
+          </div>
         ))}
       </div>
     </div>
